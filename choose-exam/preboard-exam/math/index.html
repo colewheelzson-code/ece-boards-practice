@@ -422,13 +422,13 @@ document.querySelector("#homeBtn").onclick = () => {
   revealed = [];
   document.querySelector("#data").value = "";
   document.querySelector("#homeBtn").textContent = "Lock";
-  const themeSelect = document.querySelector("#themeSelect");
+  lockScreen();
+};
+
+const themeSelect = document.querySelector("#themeSelect");
 themeSelect.value = savedTheme();
 applyTheme(themeSelect.value);
 themeSelect.addEventListener("change", () => applyTheme(themeSelect.value));
-
-lockScreen();
-};
 
 lockScreen();
 </script></body></html>
