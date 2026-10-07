@@ -1,7 +1,7 @@
 "use strict";
 
 const BASE = "/ece-boards-practice/";
-const CACHE = "ece-boards-shell-v2";
+const CACHE = "ece-boards-shell-v3";
 const SHELL = [
   BASE,
   BASE + "choose-exam/",
@@ -28,7 +28,7 @@ self.addEventListener("install", event => {
 });
 
 self.addEventListener("activate", event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith("ece-boards-") && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith("ece-boards-shell-") && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
 });
 
 self.addEventListener("fetch", event => {
