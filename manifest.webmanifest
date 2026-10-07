@@ -1,0 +1,16 @@
+{
+  "id": "./choose-exam/",
+  "name": "ECE Boards Practice",
+  "short_name": "ECE Boards",
+  "description": "Practice for your ECE board exams.",
+  "start_url": "./choose-exam/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a1224",
+  "theme_color": "#101b32",
+  "categories": ["education"],
+  "icons": [
+    { "src": "./choose-exam/engineer-app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
