@@ -1,7 +1,7 @@
 "use strict";
 
 const BASE = "/ece-boards-practice/";
-const CACHE = "ece-boards-shell-v3";
+const CACHE = "ece-boards-shell-v4";
 const SHELL = [
   BASE,
   BASE + "choose-exam/",
